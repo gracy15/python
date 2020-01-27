@@ -1,0 +1,17 @@
+a=int(input("Enter no.::"))
+add=0
+temp=a
+temp1=a
+count=0
+while(a):
+    r=a%10
+    a=a//10
+    count=count+1
+while(temp):
+    b=temp%10
+    add=add+(b**count)
+    temp=temp//10
+if(add==temp1):
+    print("Yes")
+else:
+    print("Not Amstrong no.")
